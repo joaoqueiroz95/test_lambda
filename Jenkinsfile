@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'echo "Running the test"'
                 sh 'ls'
+                sh 'chmod -x scripts/test.sh'
                 sh './scripts/test.sh'
             }
         }
