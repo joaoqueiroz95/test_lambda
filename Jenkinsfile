@@ -6,6 +6,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "Running the test"'
+                sh 'ls'
                 sh './scripts/test.sh'
             }
         }
